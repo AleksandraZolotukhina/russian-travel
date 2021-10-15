@@ -1,0 +1,513 @@
+@import url("./vendor/fonts/fonts.css");
+@import url("./vendor/normalize.css");
+body{
+    background-color:#2A2C2F;
+    color:#FFFFFF;
+}
+.page{
+    max-width: 1280px;
+    margin: auto;   
+    font-family: "Inter", Arial, sans-serif; 
+    font-weight: 400;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+}
+
+/* блок header*/
+.page__header{
+    width:92.5%; /*TODO: изменить*/ 
+    margin: 0 auto;          
+    margin-top:28px;
+}
+@media screen and (max-width:1024px){
+    .page__header{
+        width: 90%;
+    }
+}
+@media screen and (max-width:900px){
+    .page__header{
+        width:94%;
+    }
+} 
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /* устанавливаем шрифты*/
+    font-family: "Inter", Arial, sans-serif; 
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.header__logo{
+    width:176px;/*TODO: изменить*/ 
+    height:52px;/*TODO: изменить*/ 
+}
+.header__links{
+    display: flex;
+}
+.header__lang-link{
+    margin-right:18px;
+    text-decoration: none;
+    color:#FFFFFF;
+}
+.header__lang-link:last-child{
+    margin-right:0;
+}
+.header__lang-link_active{
+    text-decoration: underline;
+}
+
+/* блок content*/
+.page__content{
+    margin-top:56px;
+}
+@media screen and (max-width:1024px){
+    .page__content{
+        margin-top: 48px;
+    }
+}
+
+/* блок lead*/
+.page__lead{
+    width: 77%;/*TODO: изменить*/ 
+    margin:0 auto;
+    margin-bottom: 92px;
+}
+@media screen and (max-width:1024px){
+    .page__lead{
+       width: 90%;
+    }
+}
+@media screen and (max-width:900px){
+    .page__lead{
+        width:94%;
+    }
+}
+@media screen and (max-width:768px){
+    .page__lead{
+        margin-bottom: 88px;
+        width: 100%;
+    }
+}
+.lead{
+    /* устанавливаем шрифты*/
+    font-family: "Inter", Arial, sans-serif; 
+}
+.lead__title{
+    max-width: 720px;
+    margin:0 auto; /*обнуляем отступы унаследжованные браузером*/
+    margin-bottom:32px;
+    text-align: center;
+
+    /* устанавливаем шрифты*/
+    font-size: 96px;
+    line-height: 100px;
+    font-weight: 900;
+}
+.lead__subtitle{
+    max-width: 640px;
+    margin:0 auto;
+    margin-bottom: 64px;
+    text-align: center;
+
+    /* устанавливаем шрифты*/
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+}
+@media screen and (max-width:1024px){
+    .lead__subtitle{
+        margin-bottom:56px;
+    }
+}
+.lead__image{
+    width:100%;/*TODO: изменить*/ 
+    margin-bottom: 8px;
+}
+
+.lead__caption{
+    align-self:start;
+    margin: 0;/* обнуляем отступы унаследованные от браузера*/
+    text-transform: uppercase;
+
+    /* устанавливаем шрифты*/
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+@media screen and (max-width:768px){
+    .lead__caption{
+        width: 94%;
+        margin:auto;
+    }
+}
+/* блок intro*/
+.page__intro{
+    width: 77%;/*TODO: изменить*/ 
+    margin: 0 auto;
+    margin-bottom: 92px;
+}
+@media screen and (max-width:1024px){
+    .page__intro{
+       width: 90%;
+    }
+}
+@media screen and (max-width:900px){
+    .page__intro{
+        width:94%;
+    }
+}
+@media screen and (max-width:768px){
+    .page__intro{
+        margin-bottom: 88px;
+    }
+} 
+.intro{
+    /* устанавливаем шрифты*/
+    font-family: "Inter", Arial, sans-serif; 
+}
+.intro__title{
+    margin: 0;/* обнуляем отступы унаследованные от браузера*/
+    margin-bottom: 40px;
+    max-width: 690px;/*TODO: изменить*/ 
+
+    /* устанавливаем шрифты*/
+    font-size: 54px;
+    line-height: 58px;
+    font-weight: 900;
+}
+@media screen and (max-width:768px){
+    .intro__title{
+        max-width: 100%;
+    }
+}
+.intro__text{
+    margin: 0;/* обнуляем отступы унаследованные от браузера*/
+    margin-bottom: 33px;
+    max-width: 690px;/*TODO: изменить*/ 
+
+    /* устанавливаем шрифты*/
+    font-size: 16px;
+    line-height: 163%;
+    font-weight: 400;
+}
+@media screen and (max-width:768px){
+    .intro__text{
+        max-width: 100%;
+    }
+}
+.intro__list{
+    max-width: 690px;/*TODO: изменить*/ 
+    list-style-type: none;
+    padding: 0;/* обнуляем отступы унаследованные от браузера*/
+    margin:0;/* обнуляем отступы унаследованные от браузера*/
+
+    /* устанавливаем шрифты*/
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+}
+@media screen and (max-width:768px){
+    .intro__list{
+        max-width: 100%;
+    }
+}
+.intro__item-count{
+    font-weight: 400;
+}
+
+/* блок  photo-grid*/
+.page__photo-grid{
+    width: 92.5%;/*TODO: изменить*/ 
+    margin: 0 auto;
+    margin-bottom: 92px;
+}
+
+@media screen and (max-width:1220px){
+    .page__photo-grid{
+        width: 90%;/*TODO: изменить*/ 
+    }
+}
+@media screen and (max-width:900px){
+    .page__photo-grid{
+        width:94%;
+    }
+}  
+@media screen and (max-width:768px){
+    .page__photo-grid{
+        margin-bottom: 88px;
+    }
+}
+.photo-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(284px,1fr));
+    gap:16px;
+}
+@media screen and (max-width:1024px){
+    .photo-grid{
+        gap:14px;
+    }
+}
+@media screen and (max-width:768px){
+    .photo-grid{
+        gap:16px;
+    }
+}
+.photo-grid__item{
+    width: 100%;
+}
+
+/* блок places*/
+.page__places{
+    width: 77%;/*TODO: изменить*/ 
+    margin: 0 auto;
+    margin-bottom: 92px;
+}
+@media screen and (max-width:1220px){
+    .page__places{
+        width:90%;
+    }
+} 
+@media screen and (max-width:900px){
+    .page__places{
+        width:94%;
+    }
+}
+@media screen and (max-width:768px){
+    .page__places{
+        margin-bottom: 88px;
+    }
+} 
+.places{
+    display: grid;
+    row-gap: 80px;
+    /* устанавливаем шрифты*/
+    font-family: "Inter", Arial, sans-serif;
+    font-weight: 400; 
+}
+.place{ 
+    display: grid;
+    grid-template-columns: minmax(433px,515px) minmax(449px,539px);/*TODO: изменить*/ 
+    grid-template-areas: "title website"
+                        "image paragraphs";
+    gap: 48px 40px;
+}
+@media screen and (max-width:1024px){
+    .place{
+        grid-template-columns: minmax(340px,440px) minmax(352px,456px);/*TODO: изменить*/ 
+        column-gap: 32px;
+    }
+
+}
+@media screen and (max-width:900px){
+    .place{
+        column-gap: 28px;
+    }
+
+}  
+
+.place__title{
+    grid-area: title;
+    margin: 0;/* обнуляем отступы унаследованные от браузера*/
+
+    /* устанавливаем шрифты*/
+    font-size: 72px;
+    line-height: 76px;
+    font-weight: 900;
+}
+@media screen and (max-width:900px){
+    .place__title{
+        font-size: 65px;
+    }
+}
+@media screen and (max-width:768px){
+    .place__title{
+        font-size: 42px;
+        line-height: 46px;
+    }
+} 
+.place__image{
+    grid-area: image;
+    width:100%;/*TODO: изменить*/ 
+}
+.place__website{
+    align-self: end;
+    grid-area: website;
+}
+.place__url-heading{
+    margin: 0;/* обнуляем отступы унаследованные от браузера*/
+    margin-bottom: 12px;
+    color: #AAAAAA;
+
+    /* устанавливаем шрифты*/
+    font-size: 12px;
+    line-height: 170%;
+    letter-spacing: 2px;
+}
+@media screen and (max-width:768px){
+    .place__url-heading{
+        font-size: 12px;
+        line-height: 100%;
+    }
+} 
+.place__link{
+    color: #FFFFFF;
+}
+.place__link:hover{
+    opacity: 0.8;
+}
+.place__paragraphs{
+    grid-area: paragraphs;
+
+    /* устанавливаем шрифты*/
+    font-size: 18px;
+    line-height: 163%;
+}
+@media screen and (max-width:900px){
+    .place__paragraphs{
+        font-size: 16px;
+    }
+}
+
+.place__paragraph{
+    margin: 0;/* обнуляем отступы унаследованные от браузера*/
+    margin-bottom: 26px;
+}
+.place__paragraph:last-child{
+    margin-bottom: 0;
+}
+
+/* блок cover*/
+.page__cover{
+    width:92.5%; /*TODO: изменить*/ 
+    margin: 0 auto;
+    margin-bottom: 92px;
+}
+@media screen and (max-width:1024px){
+    .page__cover{
+        width:100%;
+    }
+}
+@media screen and (max-width:768px){
+    .page__cover{
+        margin-bottom: 88px;
+    }
+}
+.cover{
+    /* устанавливаем шрифты*/
+    font-family: "Inter", Arial, sans-serif; 
+    font-weight: 400;
+}
+.cover__overlay{
+    min-height: 740px; /*TODO: изменить*/ 
+    position: relative; 
+    z-index: 1;
+
+    background-image: url("./images/cover-trains.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color:#FFFFFF;
+    text-decoration: none;
+}
+@media screen and (max-width:1024px){
+    .cover__overlay{
+        min-height: 640px;
+    }
+}
+@media screen and (max-width:768px){
+    .cover__overlay{
+        min-height: 480px;
+    }
+}
+.cover__overlay::before{
+    width:100%;/*TODO: изменить*/ 
+    height: 100%;/*TODO: изменить*/ 
+    position: absolute; 
+    content:"";
+    z-index:-1;
+    background:rgba(42,44,47, 0.3);
+}
+.cover__overlay:hover::before{
+    background:rgba(42,44,47, 0.8);
+}
+.cover__title{
+    max-width: 560px;/*TODO: изменить*/ 
+    text-align: center;
+
+    /* устанавливаем шрифты*/
+    font-size: 72px;
+    line-height: 76px;
+    font-weight: 900;
+}
+.cover__subtitle{
+    max-width: 360px;/*TODO: изменить*/ 
+    text-align: center;
+
+    /* устанавливаем шрифты*/
+    font-size: 18px;
+    line-height: 22px;
+}
+
+/* блок footer*/
+.page__footer{
+    width:92.5%; /*TODO: изменить*/ 
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+@media screen and (max-width:1024px){
+    .page__footer{
+        width:90%;
+    }
+}
+@media screen and (max-width:900px){
+    .page__footer{
+        width:94%;
+    }
+} 
+
+.footer{
+    display:flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+    flex-wrap: wrap;
+    /* устанавливаем шрифты*/
+    font-family: "Inter", Arial, sans-serif; 
+    font-weight: 400;
+}
+.footer__list{
+    display: flex;
+    /* устанавливаем шрифты*/
+    font-size: 16px;
+    line-height: 18px;
+}
+.footer__link{
+    margin-right: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.footer__link:last-child{
+    margin-right: 0;
+}
+.footer__link:hover{
+    opacity: 0.8;
+}
+.footer__copyright{
+    margin: 0;/* обнуляем отступы унаследованные от браузера*/
+
+    /* устанавливаем шрифты*/
+    font-size: 14px;
+    line-height: 16px;
+}
