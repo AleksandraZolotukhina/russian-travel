@@ -20,6 +20,6 @@ ____
 
 - GitHub Pages
 <br />
- [Ссылка GitHub Pages]()
+ [Ссылка GitHub Pages](https://alexandrazolotykhina.github.io/russian-travel/index.html)
 
 
