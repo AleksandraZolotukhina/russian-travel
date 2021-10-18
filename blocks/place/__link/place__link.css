@@ -1,0 +1,12 @@
+.place__link{
+    text-decoration: none;
+    border-bottom: 1px solid;
+    color: #FFFFFF;
+
+    /* устанавливаем шрифты*/
+    font-size: 18px;
+    line-height: 122%;
+}
+.place__link:hover{
+    opacity: 0.8;
+}

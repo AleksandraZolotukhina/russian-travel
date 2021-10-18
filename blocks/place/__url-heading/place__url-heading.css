@@ -1,0 +1,17 @@
+.place__url-heading{
+    margin: 0;/* обнуляем отступы унаследованные от браузера*/
+    margin-bottom: 12px;
+    color: #AAAAAA;
+
+    /* устанавливаем шрифты*/
+    font-size: 12px;
+    line-height: 170%;
+    letter-spacing: 2px;
+}
+@media screen and (max-width:768px){
+    .place__url-heading{
+        /* устанавливаем шрифты*/
+        font-size: 12px;
+        line-height: 100%;
+    }
+} 

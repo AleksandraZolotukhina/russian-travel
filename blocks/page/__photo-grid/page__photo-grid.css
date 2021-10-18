@@ -1,0 +1,27 @@
+.page__photo-grid{
+    width: 92.5%; 
+    margin: 0 auto;
+    margin-bottom: 92px;
+}
+
+@media screen and (max-width:1220px){
+    .page__photo-grid{
+        width: 90%; 
+    }
+}
+@media screen and (max-width:900px){
+    .page__photo-grid{
+        width:94%;
+    }
+}  
+@media screen and (max-width:768px){
+    .page__photo-grid{
+        margin-bottom: 88px;
+    }
+}
+@media screen and (min-width:320px) and (max-width:550px){
+    .page__photo-grid{
+        width:90%;
+        margin-bottom: 64px;
+    }
+}

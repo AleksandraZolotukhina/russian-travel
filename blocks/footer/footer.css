@@ -1,0 +1,15 @@
+.footer{
+    display:flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+
+    /* устанавливаем шрифты*/
+    font-family: "Inter", Arial, sans-serif; 
+    font-weight: 400;
+}
+@media screen and (max-width:745px){
+    .footer{
+        display: grid;
+        row-gap: 48px;
+    }
+} 

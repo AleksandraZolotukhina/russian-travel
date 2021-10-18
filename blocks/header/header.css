@@ -1,0 +1,17 @@
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* устанавливаем шрифты*/
+    font-family: "Inter", Arial, sans-serif; 
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 117%;
+}
+@media screen and (min-width:320px) and (max-width:550px){
+    .header{
+        font-size: 18px;
+        line-height: 111%;
+    }
+}

@@ -1,0 +1,10 @@
+.place__website{
+    align-self: end;
+    grid-area: website;
+}
+@media screen and (min-width:320px) and (max-width:550px){
+    .place__website{
+        width:90%;
+        margin: 0 auto;
+    }
+} 

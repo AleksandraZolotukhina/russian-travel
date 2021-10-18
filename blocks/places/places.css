@@ -1,0 +1,8 @@
+.places{
+    display: grid;
+    row-gap: 80px;
+
+    /* устанавливаем шрифты*/
+    font-family: "Inter", Arial, sans-serif;
+    font-weight: 400; 
+}

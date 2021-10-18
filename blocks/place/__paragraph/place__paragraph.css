@@ -1,0 +1,12 @@
+.place__paragraph{
+    margin: 0;/* обнуляем отступы унаследованные от браузера*/
+    margin-bottom: 27px;
+}
+@media screen and (max-width:768px){
+    .place__paragraph{
+        margin-bottom: 25px;
+    }
+}
+.place__paragraph:last-child{
+    margin-bottom: 0;
+}

@@ -1,0 +1,21 @@
+.intro__list{
+    max-width: 70%;
+    list-style-type: none;
+    padding: 0;/* обнуляем отступы унаследованные от браузера*/
+    margin:0;/* обнуляем отступы унаследованные от браузера*/
+
+    /* устанавливаем шрифты*/
+    font-size: 12px;
+    line-height: 150%;
+    font-weight: 700;
+}
+@media screen and (max-width:1024px){
+    .intro__list{
+        max-width: 75%;
+    }
+}
+@media screen and (max-width:768px){
+    .intro__list{
+        max-width: 100%;
+    }
+}

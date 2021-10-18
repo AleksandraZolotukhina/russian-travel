@@ -1,0 +1,18 @@
+.footer__list{
+    display: flex;
+
+    /* устанавливаем шрифты*/
+    font-size: 16px;
+    line-height: 112%;
+}
+
+@media screen and (min-width:320px) and (max-width:550px){
+    .footer__list{
+        display: grid;
+        row-gap: 32px;
+
+        /* устанавливаем шрифты*/
+        font-size: 24px;
+        line-height: 100%;
+    }
+}
