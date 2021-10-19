@@ -1,6 +1,5 @@
 .lead__caption{
     align-self:start;
-    margin: 0;/* обнуляем отступы унаследованные от браузера*/
     text-transform: uppercase;
 
     /* устанавливаем шрифты*/

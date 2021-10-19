@@ -8,7 +8,7 @@
     <title>Путешествия по России</title>
 </head>
 
-<body>
+<body class="body">
     <div class="page">
         <header class="page__header header">
             <img class="header__logo" src="./images/header-logo.svg" alt="Логотип">
@@ -21,8 +21,10 @@
             <section class="page__lead lead">
                 <h1 class="lead__title">Путешествия по&nbsp;России</h1>
                 <p class="lead__subtitle">Настоящая страна не&nbsp;в&nbsp;выпусках новостей, а&nbsp;здесь.</p>
-                <img class="lead__image" src="./images/lead-polka.jpg" alt="Женщина спит в поезде на верхней полке">
-                <p class="lead__caption">ваша полка&nbsp;&mdash; верхняя</p>
+                <figure class="lead__figure">
+                    <img class="lead__image" src="./images/lead-polka.jpg" alt="Женщина спит в поезде на верхней полке">
+                    <figcaption class="lead__caption">ваша полка&nbsp;&mdash; верхняя</figcaption>
+                </figure>
             </section>
             <section class="page__intro intro">
                 <h2 class="intro__title">Чего мы&nbsp;там не&nbsp;видели?</h2>
@@ -33,7 +35,7 @@
                     Как, например, Вера Башмакова&nbsp;&mdash; смелая молодая мама, которая взяла в&nbsp;охапку троих детей, усадила их
                     в&nbsp;свою &laquo;Ладу&raquo; и&nbsp;проехала 20&nbsp;тысяч километров по&nbsp;родной стране. Мы&nbsp;выбрали и&nbsp;описали некоторые
                     интересные места, достойные вашего отпуска.</p>
-                <ul class="intro__list">
+                <ul class="intro__list page__list">
                     <li class="intro__item">Часовых поясов <span class="intro__item-count">11</span></li>
                     <li class="intro__item">Объектов природного наследия ЮНЕСКО <span
                             class="intro__item-count">12</span></li>
@@ -64,7 +66,7 @@
                     <img class="place__image" src="./images/place-kosa.jpg" alt="Куршская коса">
                     <div class="place__website">
                         <h3 class="place__url-heading">URL</h3>
-                        <a class="place__link" href="http://park-kosa.ru">park-kosa.ru</a>
+                        <a class="place__link" href="http://park-kosa.ru" target="_blank">park-kosa.ru</a>
                     </div>
                     <div class="place__paragraphs">
                         <p class="place__paragraph">Здесь, посреди лесов и&nbsp;песчаных дюн, вы&nbsp;сможете увидеть два водных
@@ -83,7 +85,7 @@
                     <div class="place__website">
                         <h3 class="place__url-heading">URL</h3>
                         <a class="place__link"
-                            href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy">National
+                            href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy" target="_blank">National
                             Geographic</a>
                     </div>
                     <div class="place__paragraphs">
@@ -103,7 +105,7 @@
                     <img class="place__image" src="./images/place-altai.jpg" alt="Алтай">
                     <div class="place__website">
                         <h3 class="place__url-heading">URL</h3>
-                        <a class="place__link" href="https://www.facebook.com/vera.bashm">Facebook</a>
+                        <a class="place__link" href="https://www.facebook.com/vera.bashm" target="_blank">Facebook</a>
                     </div>
                     <div class="place__paragraphs">
                         <p class="place__paragraph">Алтай&nbsp;&mdash; одно из&nbsp;красивейших мест в&nbsp;России.
@@ -121,7 +123,7 @@
                     <img class="place__image" src="./images/place-winter-baikal.jpg" alt="Зимний Байкал">
                     <div class="place__website">
                         <h3 class="place__url-heading">URL</h3>
-                        <a class="place__link" href="https://vk.com/baikalmile">https://vk.com/baikalmile</a>
+                        <a class="place__link" href="https://vk.com/baikalmile" target="_blank">https://vk.com/baikalmile</a>
                     </div>
                     <div class="place__paragraphs">
                         <p class="place__paragraph">Всем известен Байкал как крупнейшее озеро
@@ -138,7 +140,7 @@
                     <img class="place__image" src="./images/place-karelia.jpg" alt="Карелия">
                     <div class="place__website">
                         <h3 class="place__url-heading">URL</h3>
-                        <a class="place__link" href="http://vodlozero.ru">http://vodlozero.ru/</a>
+                        <a class="place__link" href="http://vodlozero.ru" target="_blank">http://vodlozero.ru/</a>
                     </div>
                     <div class="place__paragraphs">
                         <p class="place__paragraph">Сибирь заканчивается не&nbsp;на&nbsp;Урале, а&nbsp;в&nbsp;Карелии: образующая тайгу
@@ -161,13 +163,13 @@
             </section>
         </main>
         <footer class="page__footer footer">
-            <nav class="footer__list">
-                <a class="footer__link" href="https://yandex.ru/maps">Карты</a>
-                <a class="footer__link" href="https://yandex.ru/pogoda">Погода</a>
-                <a class="footer__link" href="https://rasp.yandex.ru">Расписание</a>
-                <a class="footer__link" href="https://calendar.yandex.ru">Календарь</a>
-                <a class="footer__link" href="https://travel.yandex.ru ">Путешествия</a>
-            </nav>
+            <ul class="footer__list page__list">
+                <li class="footer__item"><a class="footer__link" href="https://yandex.ru/maps" target="_blank">Карты</a></li>
+                <li class="footer__item"><a class="footer__link" href="https://yandex.ru/pogoda" target="_blank">Погода</a></li>
+                <li class="footer__item"><a class="footer__link" href="https://rasp.yandex.ru" target="_blank">Расписание</a></li>
+                <li class="footer__item"><a class="footer__link" href="https://calendar.yandex.ru" target="_blank">Календарь</a></li>
+                <li class="footer__item"><a class="footer__link" href="https://travel.yandex.ru " target="_blank">Путешествия</a></li>
+            </ul>
             <p class="footer__copyright">&copy;&nbsp;2020. Золотухина Александра</p>
         </footer>
     </div>
