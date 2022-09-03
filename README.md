@@ -5,7 +5,6 @@
     - Figma
     - Какие технологии используются в проекте
     - GitHub Pages
-    - Исправления
 ## О проекте
 ____
  Проект "Путешествие по России" использовался для тренировки в разработке интерфейса для разных устройств.
@@ -21,14 +20,4 @@ ____
 
 - GitHub Pages
 
-[Ссылка GitHub Pages](https://alexandrazolotykhina.github.io/russian-travel/index.html)
-
-- Исправления
-    - блок <em>footer__list</em> заменен на список
-    - создан общий класс <em>page__list</em> для сброса стилей унаследованных от браузера
-    - добавлен <em>target="_blank"</em> для ссылок
-    - также исправлены другие недочеты
-        - исправлена бэм методология в <em>body.css</em>
-        - добавлен тег <em>figure</em> и <em>figcaption</em>  в блок content
-        - задан font-weight для <em>place__url-heading</em>
-        - добавлен эффект наведения для смены языка в <em>header__lang-link</em>
+[Ссылка GitHub Pages](https://aleksandrazolotukhina.github.io/russian-travel/index.html)
